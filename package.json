@@ -1,0 +1,36 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Three JS with Collada loader",
+  "author": "Rahul Gaba",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev webpack-dev-server --progress --config webpack.config.dev.js",
+    "build": "webpack -p --progress --config webpack.config.build.js && cp -r assets dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://rahulgaba.com/three-js-collada"
+  },
+  "dependencies": {
+    "three": "^0.90.0",
+    "three-loaders-collada": "^1.0.2",
+    "three-orbit-controls": "^82.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.10",
+    "ejs-loader": "^0.3.0",
+    "file-loader": "^1.1.9",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.2"
+  }
+}
